@@ -1,0 +1,41 @@
+# --- Operating System Files ---
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# Linux
+.fuse_hidden
+.directory
+.Trash-*
+.nfs*
+
+# --- Python Files ---
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+env/
+venv/
+.venv/
+pip-log.txt
+pip-delete-this-directory.txt
+.pytest_cache/
+
+# --- IDEs and Editors ---
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
