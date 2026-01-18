@@ -1,29 +1,95 @@
-🧠 DSA Playbook: Mastery through Intuition
-A curated collection of Data Structures and Algorithms solutions, focused on deep understanding, visual dry runs, and clean implementation.
+# DSA Solutions Repository
 
-📌 Purpose
-This repository is my personal knowledge base for DSA. Instead of just "solving" problems, the goal here is to document the why and how behind every solution to make revision efficient and patterns recognizable.
+This repository contains my personal collection of Data Structures & Algorithms (DSA) solutions, created for revision, pattern recognition, and long-term reference.
 
-📂 Repository Structure
-Each problem is housed in its own directory within a category folder.
-.
+Each problem is structured to capture not just the final code, but also the intuition, approach, dry runs, and complexity analysis, so that revisiting a solution months later is effortless.
+
+---
+
+## 📂 Repository Structure
+
+Problems are organized by topic, and each problem has its own folder.
+
+```text
+dsa-solutions/
+│
 ├── 01-arrays/
-│   ├── 01-two_sum/
-│   │   ├── README.md   # Problem Satement, Intuition, Dry Run, Explanation, and Approach
-│   │   └── solution.py   # Executable Python code
-│   └── 02-kadanes_algorithm/
-├── 02-linked_list/
-└── ...
+│ ├── 01-two_sum/
+│ │ ├── README.md
+│ │ └── solution.py
+│
+├── 02-strings/
+├── 03-linked_list/
+├── 04-trees/
+├── 05-graphs/
+├── 06-dp/
+```
 
-🛠️ Problem Documentation Template
-Every README.md follows a consistent structure to ensure high-quality revision:
-1. Problem Statement: Brief description and link.
-2. Intuition: The core logic/pattern (e.g., Sliding Window, Two Pointers).
-3. Approach: Step-by-step breakdown.
-4. Visual Dry Run: Trace tables or diagrams showing state changes.
-5. Complexity Analysis: Time O(n) and Space O(n).
+---
 
-🚀 How to Use
-1. Browse by Topic: Navigate to a specific folder (e.g., /01-arrays).
-2. Read the Logic: Open the .md file to understand the intuition and see the dry run.
-3. Run the Code: `python 01-arrays/01-two_sum/solution.py`
+## 📄 Problem Folder Structure
+
+Each problem folder contains:
+
+- **README.md**
+  - Problem statement
+  - Intuition
+  - Approach
+  - Visual / tabular dry run
+  - Code discussion
+  - Complexity analysis
+  - Edge cases
+
+- **solution.py / solution.java**
+  - Clean, interview-ready implementation
+  - Optional sample test case
+
+---
+
+## 🧠 Design Philosophy
+
+- One problem = one folder
+- Explanation and code are separated
+- Focus on patterns, not memorization
+- Content optimized for quick revision
+- GitHub-friendly (Markdown-first)
+
+---
+
+## ▶️ How to Run a Solution (Python)
+
+```bash
+cd 01-arrays/01-two_sum
+python solution.py
+```
+
+---
+
+## 🏷 Tags & Patterns
+
+Each problem includes tags such as:
+
+- HashMap
+- Sliding Window
+- Two Pointers
+- Dynamic Programming
+
+---
+
+## 🚀 Goals of This Repository
+
+- Build strong DSA fundamentals
+- Enable fast interview revision
+- Maintain a long-term personal knowledge base
+- Track problem-solving progress over time
+
+---
+
+## 🛠 Languages Used
+
+- Python (primary)
+- Java (select problems)
+
+---
+
+> 🚧 This repository is actively maintained and updated regularly.
