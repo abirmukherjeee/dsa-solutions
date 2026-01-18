@@ -153,10 +153,6 @@ As a result, the total number of comparisons is proportional to:
 
 `(N - 1) + (N - 2) + ... + 1 = O(N²)`
 
----
-
-### Time Complexity
-
 **O(N²)** — *Best, Average, and Worst Case*
 
 Selection sort always performs the **same number of comparisons**, regardless of the initial order of the array.
