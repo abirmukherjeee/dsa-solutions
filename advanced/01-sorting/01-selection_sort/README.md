@@ -155,6 +155,62 @@ As a result, the total number of comparisons is proportional to:
 
 ---
 
+### Time Complexity
+
+**O(N²)** — *Best, Average, and Worst Case*
+
+Selection sort always performs the **same number of comparisons**, regardless of the initial order of the array.
+
+#### Why?
+
+- In the **first iteration**, the algorithm scans all `N` elements to find the minimum.
+- In the **second iteration**, it scans the remaining `N - 1` elements.
+- This continues until only one element remains.
+
+Total number of comparisons:
+
+`(N - 1) + (N - 2) + ... + 1 = O(N²)`
+
+---
+
+#### Best Case: O(N²)
+
+Even if the array is already sorted:
+- Selection sort **still scans the remaining unsorted part** to confirm the minimum.
+- No early termination is possible.
+
+➡️ Therefore, the best case is **O(N²)**.
+
+---
+
+#### Average Case: O(N²)
+
+For a randomly ordered array:
+- The algorithm performs the same full scan in each iteration.
+- The number of comparisons remains unchanged.
+
+➡️ Hence, the average case is **O(N²)**.
+
+---
+
+#### Worst Case: O(N²)
+
+In a reverse-sorted array:
+- Every iteration still requires scanning the unsorted portion.
+- The number of swaps may increase, but **comparisons remain the same**.
+
+➡️ Thus, the worst case is also **O(N²)**.
+
+---
+
+#### Key Insight
+
+Selection sort is **non-adaptive**:
+- Its time complexity **does not depend on input order**
+- Only the **number of swaps** may vary, not comparisons
+
+---
+
 ### Space Complexity
 
 **O(1)**
@@ -217,62 +273,6 @@ To make it stable, additional logic or memory is required.
 - Selection sort always performs the **same number of comparisons**, regardless of input order
 - It minimizes swaps, not comparisons
 - Often asked to explain **why it is O(N²)** even for sorted arrays
-
----
-
-### Time Complexity
-
-**O(N²)** — *Best, Average, and Worst Case*
-
-Selection sort always performs the **same number of comparisons**, regardless of the initial order of the array.
-
-#### Why?
-
-- In the **first iteration**, the algorithm scans all `N` elements to find the minimum.
-- In the **second iteration**, it scans the remaining `N - 1` elements.
-- This continues until only one element remains.
-
-Total number of comparisons:
-
-`(N - 1) + (N - 2) + ... + 1 = O(N²)`
-
----
-
-#### Best Case: O(N²)
-
-Even if the array is already sorted:
-- Selection sort **still scans the remaining unsorted part** to confirm the minimum.
-- No early termination is possible.
-
-➡️ Therefore, the best case is **O(N²)**.
-
----
-
-#### Average Case: O(N²)
-
-For a randomly ordered array:
-- The algorithm performs the same full scan in each iteration.
-- The number of comparisons remains unchanged.
-
-➡️ Hence, the average case is **O(N²)**.
-
----
-
-#### Worst Case: O(N²)
-
-In a reverse-sorted array:
-- Every iteration still requires scanning the unsorted portion.
-- The number of swaps may increase, but **comparisons remain the same**.
-
-➡️ Thus, the worst case is also **O(N²)**.
-
----
-
-#### Key Insight
-
-Selection sort is **non-adaptive**:
-- Its time complexity **does not depend on input order**
-- Only the **number of swaps** may vary, not comparisons
 
 ---
 
